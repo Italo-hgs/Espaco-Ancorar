@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,400;0,700;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Espaço Ancorar - Creche e Berçário</title>
+</head>
+<body>
+    <header>
+        <div class="container flex">
+            <div class="logo">
+                <h2><span>Creche e Berçário</span><br>Espaço Ancorar</h2>
+            </div><!--logo-->
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#main">INÍCIO</a></li>
+                    <li><a href="#@">QUEM SOMOS</a></li>
+                    <li><a href="#!">SERVIÇOS</a></li>
+                    <li><a href="#$">CONTATO</a></li>
+                    <a class="instagram" href=""><i class="fab fa-instagram"></i></a>
+                    <a class="facebook" href=""><i class="fab fa-facebook"></i></a>
+                </ul>
+            </nav><!--menu-desktop-->
+
+            <div class="icone-menu">
+                <i onclick="abrirMenu()" class="fas fa-bars"></i>
+            </div>
+
+            <nav id="open" class="menu-mobile">
+                <i onclick="abrirMenu()" class="fas fa-times"></i>
+                <ul>
+                    <li><a onclick="fecharMenu()" href="#main">INÍCIO</a></li>
+                    <li><a onclick="fecharMenu()" href="#@">QUEM SOMOS</a></li>
+                    <li><a onclick="fecharMenu()" href="#!">SERVIÇOS</a></li>
+                    <li><a onclick="fecharMenu()" href="#$">CONTATO</a></li>
+                </ul>
+            </nav><!--menu-mobile-->
+        </div><!--container-->
+    </header>
+
+    <section id="main" class="banner-main">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/banner1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/banner2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/banner3.jpg" class="d-block w-100" alt="...">
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section><!--banner-main-->
+
+    <section class="apresentacao">
+        <div class="container">
+            <h2>Seja bem vindo(a) ao nosso espaço!</h2>
+            <p>
+                A Creche e Berçário Espaço Ancorar atua há mais de cinco anos trabalhando na área educacional, 
+                buscando cuidar com amor e proporcionar às famílias um ambiente educativo acolhedor e 
+                seguro que garanta às crianças um pleno desenvolvimento psicológico, cognitivo, intelectual, 
+                social, físico e emocional.
+            </p>
+            <a href="#quemSomos">CONHEÇA MAIS SOBRE A NOSSA CRECHE</a>
+        </div><!--container-->
+    </section><!--apresentacao-->
+
+    <section class="diferenciais">
+        <h2>Porque somos diferentes...</h2>
+        <div class="container flex">
+            
+            <div class="diferenciais-box">
+                <div class="difereciais-box-circle">
+                    <img src="./img/qualificados.png" alt="">
+                </div><!--difereciais-box-circle-->
+                <h3>PROFISSIONAIS<br>QUALIFICADOS</h3>
+                <P>
+                    Nossa equipe conta com pedagogos, psicopedagogos, educador físico, nutricionista, monitores, 
+                    auxiliares de limpeza e segurança. Todos qualificados e periodicamente capacitados através de  
+                    cursos de formação continuada.
+                </P>
+            </div><!--diferenciais-box-->
+
+            <div class="diferenciais-box">
+                <div class="difereciais-box-circle">
+                    <img src="./img/estrutura.png" alt="">
+                </div><!--difereciais-box-circle-->
+                <h3>EXCELENTE<br>INFRAESTRUTURA</h3>
+                <P>
+                    Nossas salas de aula são todas climatizadas, acolhedoras e lúdicas. Temos ainda espaços destinados à berçário, 
+                    fraldário, dormitório, refeitório, sala de artes, 
+                    copa e cozinha, banho de sol e integração social. 
+                </P>
+            </div><!--diferenciais-box-->
+
+            <div class="diferenciais-box">
+                <div class="difereciais-box-circle">
+                    <img src="./img/paixao.png" alt="">
+                </div><!--difereciais-box-circle-->
+                <h3>SOMOS APAIXONADOS<br>PELO QUE FAZEMOS</h3>
+                <P>
+                    Nossa equipe conta com pedagogos, psicopedagogos, educador físico, nutricionista, monitores, 
+                    auxiliares de limpeza e segurança. Todos qualificados e periodicamente capacitados através de  
+                    cursos de formação continuada.
+                </P>
+            </div><!--diferenciais-box-->
+        </div><!--container-->
+        <div id="@"></div>
+    </section><!--diferenciais-->
+
+    <section class="quemsomos">
+        <h2>Quem somos</h2>
+        <div class="container flex">
+            <div class="quemsomos-texto">
+                <p>
+                    Atuando na educação há mais de 10 anos. Temos como proposta pedagógica respeitar as fases do desenvolvimento 
+                    infantil e valorizar a prática de atividades saudáveis que estimulem o crescimento harmônico das nossas crianças
+                     no que diz respeito à construção de sua identidade, autonomia e percepção de seu lugar no mundo. Nossos valores
+                      fundamentam-se na ética, respeito e estima das relações sociais presentes na infância, partilhando saberes, 
+                      respeitando as diferenças e ensinando com amor lições importantes para a formação de cidadãos competentes e 
+                      indivíduos extraordinários. Buscamos oferecer uma educação inovadora e nos tornar referência em qualidade educacional 
+                      por meio de experiências significativas em um ambiente afetivo onde brincar, cuidar e educar se tornam 
+                      indissociáveis para o desenvolvimento da criança.
+                </p>
+            </div><!--quemsomos-texto-->
+            <div class="quemsomos-imagem">
+                <img src="./img/banner2.jpg" alt="">
+            </div><!--quemsomos-imagem-->
+        </div><!--container-->
+        <div id="!"></div>
+    </section><!--quemsomos-->
+
+    <section class="apoio">
+        <h2>Apoiamos no desenvolvimento das nossas crianças</h2>
+        <div class="container flex">
+            <div class="apoio-box">
+                <img src="./img/educacao-alimentar.jpg" alt="">
+                <h3>EDUCAÇÃO ALIMENTAR</h3>
+                <p>
+                    Os nossos alunos terão um cardápio diário balanceado e adequado às necessidades nutricionais 
+                    de cada faixa etária de acordo com as orientações passadas por nossa equipe de nutrição. 
+                    Para as mães com bebês menores de um ano oferecemos apoio para iniciar a introdução alimentar 
+                    de forma participativa e tradicional
+                </p>
+            </div><!--apoio-box-->
+
+            <div class="apoio-box">
+                <img src="./img/educacao-infantil.jpg" alt="">
+                <h3>EDUCAÇÃO AMBIENTAL</h3>
+                <p>
+                    Promovemos o contato com a natureza através de experiências práticas, significativas e 
+                    prazerosas como horta orgânica, jardinagem, minizoo e oficinas de reciclagem que incutam 
+                    nas crianças a preocupação e zelo com o meio ambiente.
+                </p>
+            </div><!--apoio-box-->
+
+            <div class="apoio-box">
+                <img src="./img/banner3.jpg" alt="">
+                <h3>ESPAÇO PARA LEITURA</h3>
+                <p>
+                    Incentivamos a leitura das nossas crianças com espaço interativo e silencioso para auxiliar
+                    a sua interatividade com o mundo das letrinhas.
+                </p>
+            </div><!--apoio-box-->
+        </div><!--container-->
+    </section><!--apoio-->
+
+    <section  class="horarios">
+        <h2>Horários</h2>
+        <div class="container flex">
+            <div class="horarios-texto w50">
+                <h3>Tempo Integral:</h3>
+                <p>Das 7:00h às 18:00h</p>
+                <h3>Pré-Escolar:</h3>
+                <p>Das 7:00h às 12:00h (Matutino)</p>
+                <p>Das 13:30h às 18:00h (Vespertino)</p>
+                <h3>Meio Período:</h3>
+                <p>Das 7:00h às 12:00h (Com Almoço)</p>
+                <p>Das 13:00h às 18:00h (Com Jantar)</p>
+            </div><!--horarios-texto-->
+            <div class="horarios-icone w50">
+                <i class="far fa-clock"></i>
+            </div><!--horarios-icone-->
+        </div><!--container-->
+        <div id="$"></div>
+    </section><!--horarios-->
+
+    <section class="contato">
+        <h2>Contato</h2>
+        <p>Utilize o formulário abaixo como um Canal Direto com a Creche e Berçário Espaço Ancorar.<br>
+            Através dele você pode enviar, dúvidas, críticas, elogios ou sugestões.<br>
+            Sua opinião é muito importante!</p>
+        <div class="container flex">
+            <div class="contato-formulario w50">
+                <form action="">
+                    <div class="nome">
+                        <label for="">Nome:</label>
+                        <input type="text" name="" id="" placeholder="Nome" required>
+                    </div><!--nome-->
+                    <div class="email">
+                        <label for="">E-mail:</label>
+                        <input type="email" name="" id="" placeholder="E-mail" required>
+                    </div><!--nome-->
+                    <div class="textarea">
+                        <label for="">Mensagem:</label>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Mensagem..."></textarea>
+                    </div>
+                    <button>ENVIAR</button>
+                </form>
+            </div><!--contato-formulario-->
+            <div class="contato-localizacao">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1946.1043799634801!2d-38.3316949412781!3d-12.699793300000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71669cf868b374d%3A0xe67ab15205cf7620!2sEspa%C3%A7o%20Ancorar!5e0!3m2!1spt-BR!2sbr!4v1631320367851!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div><!--contato-localizacao-->
+        </div><!--container-->
+    </section><!--contato-->
+
+    <footer>
+        <div class="container flex">
+            <div class="telefone">
+                <h3>NOSSOS TELEFONES:</h3>
+                <p>(71) 98888-8888 | (71) 98888-8888</p>
+            </div><!--telefone-->
+            <div class="nossoemail">
+                <h3>NOSSO ENDEREÇO:</h3>
+                <p>Rua das Travessas, 14, Gleba A<br>Próximo ao ponto do derba</p>
+            </div><!--nossoemail-->
+            <div class="siga">
+                <h3>SIGA-NOS</h3>
+                <a href=""><i class="fab fa-facebook"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+            </div>
+        </div><!--container-->
+        <div class="direitos container">
+            <h5>CRECHE ESPAÇO ANCORAR</h5>
+            <p>CUIDAR, EDUCAR E BRINCAR!</p>
+            <P>TODOS OS DIREITOS RESERVADOS</P>
+        </div>
+        <h6>Desenvido por Ítalo Góes</h6>
+    </footer>
+
+    <!--scripts-->
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>
